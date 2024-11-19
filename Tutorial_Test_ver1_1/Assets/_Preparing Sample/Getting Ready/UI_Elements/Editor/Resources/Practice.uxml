@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+    <!-- Boxを作成 -->
+    <engine:Box >
+        <!-- 複数のラベルの作成 -->
+        <engine:Label text="hogehoge"/>
+        <engine:Label text="あいうえお"/>
+        <engine:Label text="ABCDE"/>
+        <engine:Label text="12345"/>
+        <engine:Label text="テストテスト"/>
+    </engine:Box> 
+    
+    <engine:Button text="OK" name="OKButton" class="OKButton"/>
+</engine:UXML>

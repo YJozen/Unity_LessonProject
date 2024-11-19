@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c27ba131f5543aa8fd72c017f35ce8, type: 3}
+  m_Name: EnemySetting
+  m_EditorClassIdentifier: 
+  DataList:
+  - Id: Slime
+    Hp: 4
+    Attack: 3
+    Defense: 2
+    Exp: 1
+  - Id: Golem
+    Hp: 20
+    Attack: 15
+    Defense: 10
+    Exp: 5

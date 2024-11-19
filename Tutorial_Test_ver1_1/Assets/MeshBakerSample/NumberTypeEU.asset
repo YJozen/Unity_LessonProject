@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: NumberTypeEU
+  m_EditorClassIdentifier: 
+  version: 3252
+  resultType: 0
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: ae209674c9a4bc9468eafa6ac62e75c1, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.0009765625
+      width: 0.24951172
+      height: 0.24902344
+    srcObjName: SportCar20_NumberTypeEU
+    textureArraySliceIdx: -1
+    allPropsUseSameTiling: 0
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0.001049838
+      y: 0.0006140475
+      width: 0.9986591
+      height: 0.99911565
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: fcac1c483fda6f94ca7c85597861ed18, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.25195312
+      width: 0.24951172
+      height: 0.24902344
+    srcObjName: SportCar20_NumberTypeEU
+    textureArraySliceIdx: -1
+    allPropsUseSameTiling: 0
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0.001049838
+      y: 0.0006140475
+      width: 0.9986591
+      height: 0.99911565
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 85ba04a0355970941a75193ed9334dc8, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.5029297
+      width: 0.24951172
+      height: 0.24902344
+    srcObjName: SportCar20_NumberTypeEU
+    textureArraySliceIdx: -1
+    allPropsUseSameTiling: 0
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0.001049838
+      y: 0.0006140475
+      width: 0.9986591
+      height: 0.99911565
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 528dcd708f568184aa3ec5ac978ad713, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.25097656
+      y: 0.0009765625
+      width: 0.24951172
+      height: 0.24902344
+    srcObjName: SportCar20_NumberTypeEU
+    textureArraySliceIdx: -1
+    allPropsUseSameTiling: 0
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0.001049838
+      y: 0.0006140475
+      width: 0.9986591
+      height: 0.99911565
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 485b5b6c9be8bc84fa20faf56e94b536, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.25097656
+      y: 0.25195312
+      width: 0.24951172
+      height: 0.24902344
+    srcObjName: SportCar20_NumberTypeEU
+    textureArraySliceIdx: -1
+    allPropsUseSameTiling: 0
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0.001049838
+      y: 0.0006140475
+      width: 0.9986591
+      height: 0.99911565
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 06ae0c5992fcca54195466ed3249e1af, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.25097656
+      y: 0.5029297
+      width: 0.24951172
+      height: 0.24902344
+    srcObjName: SportCar20_NumberTypeEU
+    textureArraySliceIdx: -1
+    allPropsUseSameTiling: 0
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0.001049838
+      y: 0.0006140475
+      width: 0.9986591
+      height: 0.99911565
+    tilingTreatment: 1
+  resultMaterials:
+  - combinedMaterial: {fileID: 2100000, guid: c26487aa9d139412d9c7441d2a0c1fee, type: 2}
+    considerMeshUVs: 1
+    sourceMaterials:
+    - {fileID: 2100000, guid: ae209674c9a4bc9468eafa6ac62e75c1, type: 2}
+    - {fileID: 2100000, guid: fcac1c483fda6f94ca7c85597861ed18, type: 2}
+    - {fileID: 2100000, guid: 85ba04a0355970941a75193ed9334dc8, type: 2}
+    - {fileID: 2100000, guid: 528dcd708f568184aa3ec5ac978ad713, type: 2}
+    - {fileID: 2100000, guid: 485b5b6c9be8bc84fa20faf56e94b536, type: 2}
+    - {fileID: 2100000, guid: 06ae0c5992fcca54195466ed3249e1af, type: 2}
+  resultMaterialsTexArray: []
+  doMultiMaterial: 0

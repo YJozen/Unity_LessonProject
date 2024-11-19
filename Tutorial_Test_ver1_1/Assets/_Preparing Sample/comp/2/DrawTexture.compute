@@ -1,0 +1,29 @@
+#pragma kernel DrawTexture
+
+RWTexture2D<float4> textureBuffer;//RWTexture2Dでテクスチャバッファを宣言して、float4型で描画色を設定
+
+
+
+// SV_DispatchThreadID: 
+// あるカーネルを実行するスレッドが全てのスレッドのどこに位置するか(X,Y,Z)
+//計算式でいうと
+// SV_Group_ID * numthreads + GroupThreadID
+//座標位置が渡されるイメージ
+//テクスチャは2Dのため今回はnumthreadsは(8,8,1)で、XYそれぞれ8スレッドずつで指定しています。
+[numthreads(8,8,1)]
+void DrawTexture(uint3 dispatchThreadID : SV_DispatchThreadID)
+{
+    // X方向になるほど濃くなるようにする
+    float width, height;
+    textureBuffer.GetDimensions(width, height);
+    textureBuffer[dispatchThreadID.xy] = float4(
+        dispatchThreadID.x / width,
+        dispatchThreadID.x / width,
+        dispatchThreadID.x / width,
+        1);
+}
+
+
+
+
+
