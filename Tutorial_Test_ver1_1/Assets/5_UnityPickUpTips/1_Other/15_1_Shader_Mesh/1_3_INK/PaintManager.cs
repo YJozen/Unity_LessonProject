@@ -25,7 +25,7 @@ public class PaintManager : Singleton<PaintManager>
 
 
     public override void Awake(){
-        base.Awake();
+        // base.Awake();
         
         paintMaterial  = new Material(texturePaint); //シェーダーを適応したマテリアル生成
         extendMaterial = new Material(extendIslands);//シェーダーを適応したマテリアル生成
