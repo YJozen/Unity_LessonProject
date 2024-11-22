@@ -725,7 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1618602604}
   mouseSingleClick: 0
-  paintColor: {r: 1, g: 0.99526936, b: 0.41037738, a: 0.8}
+  paintColor: {r: 0, g: 1, b: 0, a: 0.73333335}
   radius: 0.5
   strength: 0.5
   hardness: 0.1
@@ -737,12 +737,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632358955}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1983569354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699397984
 GameObject:
@@ -754,8 +754,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1699397986}
   - component: {fileID: 1699397985}
+  - component: {fileID: 1699397987}
+  - component: {fileID: 1699397988}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PaintableAreaCalculator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -768,7 +770,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699397984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e08d871377ca4b8292b9ceb7c888ec3, type: 3}
   m_Name: 
@@ -787,6 +789,68 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1699397987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699397984}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ca2dd9ebdef4b6a863dda53b978767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paintable: {fileID: 1590227906}
+--- !u!114 &1699397988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699397984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a9cf6b5022d94a5cb088e406dadf01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paintables:
+  - {fileID: 1590227906}
+  - {fileID: 702154641}
+--- !u!1 &1983569353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983569354}
+  m_Layer: 0
+  m_Name: Painter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1983569354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983569353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1632358957}
+  - {fileID: 3268764891693325196}
+  - {fileID: 6245361207758998922}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2109811890
@@ -993,7 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2a232bba1484a2f85c8482c0079a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintColor: {r: 0.9528302, g: 0.4269758, b: 0.4269758, a: 1}
+  paintColor: {r: 0, g: 0, b: 1, a: 0.6862745}
   minRadius: 0.05
   maxRadius: 0.2
   strength: 1
@@ -1013,12 +1077,12 @@ GameObject:
   - component: {fileID: 4581241194137472776}
   - component: {fileID: 5497088085024607232}
   m_Layer: 0
-  m_Name: CollisionPainter
+  m_Name: Sphere_CollisionPainter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!198 &1897540071847813072
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -1209,7 +1273,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0, g: 0, b: 1, a: 0.78039217}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5750,12 +5814,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390359079310805275}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.5, y: 3.1, z: 1.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1983569354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4581241194137472776
 Rigidbody:
@@ -5765,8 +5829,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390359079310805275}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 50
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -5796,7 +5860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0910266817f6d4b0085df4f13c952442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintColor: {r: 0.6792453, g: 0.23389105, b: 0.23389105, a: 0.6509804}
+  paintColor: {r: 1, g: 0, b: 0, a: 0.7607843}
   radius: 1
   strength: 1
   hardness: 1
@@ -5808,13 +5872,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6599774751357306459}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.02, y: 3.32, z: -1.4}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -4.65, y: 3.32, z: -1.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1983569354}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!135 &6329306737387794425
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5849,12 +5913,12 @@ GameObject:
   - component: {fileID: 516783143391548889}
   - component: {fileID: 881789539069398073}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: ParticleSystem_CollisionPainter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &7184021426400926038
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5875,7 +5939,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e89e5aa2e6d2240df97e5ffc898549c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5912,9 +5976,7 @@ SceneRoots:
   - {fileID: 1618602605}
   - {fileID: 2109811892}
   - {fileID: 1053669734}
-  - {fileID: 1632358957}
-  - {fileID: 3268764891693325196}
-  - {fileID: 6245361207758998922}
+  - {fileID: 1983569354}
   - {fileID: 1195586742}
   - {fileID: 1062310216}
   - {fileID: 1699397986}
